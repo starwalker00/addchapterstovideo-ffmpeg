@@ -2,7 +2,7 @@ import re
 
 chapters = list()
 
-with open('chapters.txt', 'r') as f:
+with open('chapters.txt', 'r', encoding="utf8") as f:
    for line in f:
       print(line)
       x = re.match(r"(\d{2}):(\d{2}):(\d{2}) (.*)", line)
